@@ -1,0 +1,11 @@
+p {
+	color: red;
+	background-color: orange;
+	font-size: large;
+	font-style: italic;
+	text-align: center;
+}
+
+h1 {
+	text-shadow: 2px 5px grey;
+}
