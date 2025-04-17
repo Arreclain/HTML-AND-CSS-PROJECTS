@@ -1,105 +1,160 @@
 <! DOCTYPE html>
-<html>
+	<html>
+
 	<head>
-	<title>The Pet Shop</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Pet distribution website">
+		<title>The Pet Shop</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="description" content="Pet distribution website">
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 	</head>
+
 	<body>
-	<!--NAVBAR-->
-	<nav>
-	<ul>
-		<li><a href="index.html">HOME</a></li>
-		<li><a href="contact.html">CONTACT</a></li>
-	</ul>
-	<ul>
-		<a href="#cat"><li>Cats and Kittens</i></a>
-		<a href="#dog"><li>Dogs and Puppies</i></a>
-		<a href="#rabbit"><li>Rabbits and Bunnies</i></a>
-		<a href="#pig"><li>Guinea Pigs</i></a>
-		<a href="#fish"><li>Fish</i></a>
-		<a href="#reptile"><li>Reptiles</i></a>
-		<a href="#video"><li>Videos</i></a>
-	</ul>
-	</nav>
-	<!--HEADER-->
-	<header>
-		<div>
-		<h1>Welcome To The Pet Shop!</h1>
-		</div>
-	</header>
-	<!--PET IMAGES-->
-	<section>
-		<div>
-			<h2>
-			<em>Choose a Pet!</em>
-			<!-- <a href="https://en.wikipedia.org/wiki/Pet" target="new">Confused as to what a pet is?</a> -->
-			</h2>
-			<div><!--CAT IMAGE-->
-				<div id="cat">
-					<h3>
-					Cats and Kittens
-					</h3>
-					<img src="images/cat.png" alt="Picture of a Cute Cat">
-				</div>
-				<div id="dog"><!-- DOG IMAGE-->
-					<h3>
-					Dogs and Puppies
-					</h3>
-					<img src="images/dog.png" alt="Picture of a Cute Dog">
-				</div>
-				<div id="rabbit"><!--RABBIT IMAGE-->
-					<h3>
-					Rabbits and Bunnies
-					</h3>
-					<img src="images/rabbits.png" alt="Picture of a Rabbit Eating Cutely">
-				</div>
-				<div id="pig"><!--GUINEA PIGS IMAGE-->
-					<h3>
-					GUINEA PIGS, Large and Small
-					</h3>
-					<img src="images/guineapigs.png" alt="Picture of Two Guinea Pigs">
-				</div>
-				<div id="fish"><!--FISH IMAGE-->
-					<h3>
-					Fish
-					</h3>
-					<img src="images/fish.png" alt="A Picture of Goldfish">
-				</div>
-				<div id="reptile"><!--REPTILE IMAGE-->
-					<h3>
-					Reptiles
-					</h3>
-					<img src="images/beardeddragon.png" alt="Picture of a Bearded Dragon">
-				</div>
+		<!--NAVBAR-->
+		<nav class="nav-bar">
+			<ul id="nav-border">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+			<ul>
+				<a href="#cat">
+					<li>Cats and Kittens</i>
+				</a>
+				<a href="#dog">
+					<li>Dogs and Puppies</i>
+				</a>
+				<a href="#rabbit">
+					<li>Rabbits and Bunnies</i>
+				</a>
+				<a href="#pig">
+					<li>Guinea Pigs</i>
+				</a>
+				<a href="#fish">
+					<li>Fish</i>
+				</a>
+				<a href="#reptile">
+					<li>Reptiles</i>
+				</a>
+				<a href="#video">
+					<li>Videos</i>
+				</a>
+			</ul>
+		</nav>
+		<!--HEADER-->
+		<header>
+			<div>
+				<h1 class="animate-text">Welcome To The Pet Shop!</h1>
 			</div>
-			<blockquote cite="">For over 100 years, The Pet Shop has been locating pets and capturing them for later sale at our many stores.  We here at pet store value daring, awareness, and a sense of adventure in our staff, our pets, and in the spirit of the service we deliver to you.</blockquote>
-		</div>
-	</section>
-	<!--VIDEOS-->
-	<section>
-		<!--DOG VIDEO-->
-		<div id="video">
-			<h3>Videos</h3>
-			<iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
-		</div>
-	</section>
-	<!--FOOTER-->
-	<footer>
-		<table>
-			<tr>
-				<td>
-					<p>The Pet Shop!&copy;</p>
-				</td>
-				<td>
-					<p>123 Square Street</p>
-					<p>Portland, OR 97006</p>
-				</td>
-				<td>
-					<p>503-234-3966</p>
-				</td>
-			</tr>
-		</table>
-	</footer>
+		</header>
+		<!--PET IMAGES-->
+		<section>
+			<div class="container">
+				<h2>
+					<em>Choose a Pet!</em>
+					<!-- <a href="https://en.wikipedia.org/wiki/Pet" target="new">Confused as to what a pet is?</a> -->
+				</h2>
+				<div><!--CAT IMAGE-->
+					<div id="cat" class="column">
+						<div class="image-container">
+							<h3>
+								Cats and Kittens
+							</h3>
+							<img src="images/cat.png" alt="Picture of a Cute Cat">
+							<div class="overlay"></div>
+						</div>
+					</div>
+					<div id="dog" class="column"><!-- DOG IMAGE-->
+						<div class="image-container">
+							<h3>
+								Dogs and Puppies
+							</h3>
+							<img src="images/dog.png" alt="Picture of a Cute Dog">
+							<div class="overlay"></div>
+						</div>
+					</div>
+					<div id="rabbit" class="column"><!--RABBIT IMAGE-->
+						<div class="image-container">
+							<h3>
+								Rabbits and Bunnies
+							</h3>
+							<img src="images/rabbits.png" alt="Picture of a Rabbit Eating Cutely">
+							<div class="overlay"></div>
+						</div>
+					</div>
+					<div id="pig" class="column"><!--GUINEA PIGS IMAGE-->
+						<div class="image-container">
+							<h3>
+								GUINEA PIGS, Large and Small
+							</h3>
+							<img src="images/guineapigs.png" alt="Picture of Two Guinea Pigs">
+							<div class="overlay"></div>
+						</div>
+					</div>
+					<div id="fish" class="column"><!--FISH IMAGE-->
+						<div class="image-container">
+							<h3>
+								Fish
+							</h3>
+							<img src="images/fish.png" alt="A Picture of Goldfish">
+							<div class="overlay"></div>
+						</div>
+					</div>
+					<div id="reptile" class="column"><!--REPTILE IMAGE-->
+						<div class="image-container">
+							<h3>
+								Reptiles
+							</h3>
+							<img src="images/beardeddragon.png" alt="Picture of a Bearded Dragon">
+							<div class="overlay"></div>
+						</div>
+					</div>
+				</div>
+				<blockquote cite="">For over 100 years, The Pet Shop has been locating pets and capturing them for later
+					sale at our many stores. We here at pet store value daring, awareness, and a sense of adventure in
+					our staff, our pets, and in the spirit of the service we deliver to you.</blockquote>
+			</div>
+		</section>
+		<!--VIDEOS-->
+		<section>
+			<!--DOG VIDEO-->
+			<div id="video" class="container">
+				<h3>Videos</h3>
+				<iframe width="1280" height="720" src="https://www.youtube.com/embed/ng58pNPDDW4"></iframe>
+			</div>
+		</section>
+		<!--FOOTER-->
+		<footer>
+			<table>
+				<tr>
+					<td>
+						<p>The Pet Shop!&copy;</p>
+					</td>
+					<td>
+						<p>123 Square Street</p>
+						<p>Portland, OR 97006</p>
+					</td>
+					<td>
+						<p>503-234-3966</p>
+					</td>
+				</tr>
+			</table>
+		</footer>
 	</body>
-</html>
+
+	</html>
