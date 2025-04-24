@@ -1,0 +1,24 @@
+/*This imports the font Merriweather from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Sacramento&display=swap');
+
+
+
+title, body{
+    font-family: "Merriweather", serif;/*Font from fonts.google.com*/
+    font-size: medium;
+    font-weight: lighter;
+    background-color: antiquewhite;
+}
+
+p, h3{
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+
+}
+
+img{
+    border-radius: 15px;
+    border: none;
+    display: block;
+    margin: auto;
+}
