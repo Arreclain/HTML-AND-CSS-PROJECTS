@@ -1,0 +1,37 @@
+/*Font Passion One imported from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+/*Creates global CSS variables that can be resued through the file*/
+:root{
+    --maincolor: rgb(126,133, 130);
+    --main-color-accent: rgb(237, 192, 3);
+    --main-color-transparent: rgba(126, 133, 130, 0.8);
+    --secondary-color: rgba(128,0,0,0.9);
+    --accent-color: rgb(36,36,36);
+    --accent-text-color: rgb(255,255,255);
+
+    --main-font-family: 'Passion one', cursive;
+}
+
+
+body{
+    background-image: url(../images/theater-curtains.jpg);
+    background-size: 100%;
+}
+
+/*NAVBAR*/
+
+.navbar{
+    background-color: var(--secondary-color);
+    border-bottom: 5px solid rgb(98,0,0);
+    height: 100px;
+}
+
+/*Affects the title in the navbar Academy Cinemas*/
+.navbar-brand{
+    color: var(--main-color-accent);
+    font-family: var(--main-font-family);
+    font-size: 45px;
+    padding-left: 30px;
+}
