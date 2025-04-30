@@ -10,7 +10,9 @@
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <!--CUSTOM CSS listed last to raise its priority over that of Bootstrap CSS-->
   <link href="css/custom.css" rel="stylesheet">
-  </head>
+  <!--Custom CSS for multiple screen sizes-->
+  <link href="css/custom-css-media.css" rel="stylesheet">
+</head>
 
 <body>
   <!--BOOTSTRAP JAVASCRIPT-->
@@ -18,7 +20,7 @@
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
   <!--NAVBAR-->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Academy Cinemas</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -47,6 +49,28 @@
       </div>
     </div>
   </nav>
+  <!--LOGO-->
+  <header class="row justify-content-center">
+    <img src="images/logo.png" class="img-fluid col-lg-6" id="header-image" alt="logo for academy cinemas">
+  </header>
+  <!--NOW PLAYING-->
+  <section>
+    <div class="container">
+      <h1>Now Playing</h1>
+      <!--BEN HUR-->
+      <div class="d-flex flex-row" id="ben-hur">
+        <div class="col-lg-5">
+          <img scr="images\ben-hur.jpg" class="img-fluid" alt="Ben-Hur movie poster">
+        </div>
+<div class="card col-lg-5">
+  <div class="card-body">
+    <h3 class="card-title">Ben-Hur</h3>
+  </div>
+</div>
+      </div>
+    </div>
+
+  </section>
 
 </body>
 
