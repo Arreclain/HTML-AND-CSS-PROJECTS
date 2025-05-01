@@ -2,9 +2,19 @@
 /*calc(minimum size + (maximum size - minimum size)) * ((viewport width percentage - minimum viewport width) 
     divided by (maximum viewport width - minimum viewport width)))*/
     h1{
-        font-size: calc(50px +(100-50)*((100vw-320px)/(1920-320)));
+        font-size: calc(50px + ((100-50)*((100vw-320px)/(1920-320))));
+    }
+    
+    h4{
+        font-size: calc(25px + (35-25) *((100vw-320px) / (1920-320)));
+    }
+
+    .lead{
+        font-size: calc(16px +((18-16) * ((100vw-320px)/(1920-320))));
     }
 }
+
+
 
 @media screen and (max-width: 990px){
     .navbar-collapse{
@@ -24,3 +34,17 @@
         padding-left: 60px;
     }
 }
+
+/*BUTTONS*/
+/*Contains the main styling for buttons that contain the Boostrap .btn class.*/
+.btn{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: var(--accent-color);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+}
+

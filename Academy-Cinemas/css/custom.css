@@ -1,6 +1,7 @@
 /*Font Passion One imported from fonts.google.com*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
-
+/*Yesteryear font imported from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
 
 /*Creates global CSS variables that can be resued through the file*/
 :root{
@@ -12,6 +13,7 @@
     --accent-text-color: rgb(255,255,255);
 
     --main-font-family: 'Passion one', cursive;
+    --secondary-font-family: 'Yesteryear', cursive;
 }
 
 
@@ -109,6 +111,11 @@ body{
 }
 
 /*GENERAL STYLING*/
+h1, h3, h4, p{
+    cursor: default; /*When hovering over text, the cursor remains an arrow.*/
+    
+}
+
 h1{
 font-family: var(--main-font-family);
 color: var(--main-color-accent);
@@ -122,8 +129,17 @@ h3{
     font-size: 50px;
 }
 
+h4{
+    font-family: var(--secondary-font-family);
+    font-size: 25px;
+}
+
 /*MOVIE CARDS*/
 
 .container{
     padding: 100px;
+}
+
+b{
+    font-weight: 600;
 }
