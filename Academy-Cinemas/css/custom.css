@@ -286,3 +286,24 @@ input[type="number"]:focus {
 #contact-submit{
     float: right;
 }
+
+/*FOOTER*/
+
+footer{
+    border-top:  5px solid var(--main-color);
+    background-color:  rgba(0,0,0,0.6);
+    margin: 0px -15px 0px -15px; /*Extendes the footer beyond the page on the laft and right, removing all white space.*/
+}
+
+.footer-text{
+    font-family: var(--main-font-family);
+    color: var(--accent-text-color);
+    font-size: 30px;
+}
+
+
+/*Specifically styles the image in the footer.  In oreder to do so, it overrides the img type selector styling.*/
+.footer-img{
+    width: auto;
+    height: 130px;
+}
