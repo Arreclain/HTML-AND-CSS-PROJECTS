@@ -1,33 +1,136 @@
 /*Tags*/
-td img{
+body {
+    background-color: bisque;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*   margin: 0px 10% 0px 10%;  */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+div,
+header {
+    padding-left: 10px;
+}
+
+table {
+    border: 3px solid darkgray;
+}
+
+td {
+    padding: 10px;
+    background-color: rgb(250, 231, 207);
+}
+
+th {
+    background-color: lightgray;
+    font-weight: initial;
+}
+
+
+td,
+th {
+    border: 2px solid grey;
+}
+
+td img {
     width: 45%;
     height: 45%;
+
 }
 
-footer{
-    margin: 10px 15% 10px 15%;
+footer {
+    margin: 10px -15% -10px -15%;
+    background-color: peru;
+
 }
 
-footer div{
-text-align: center;
+footer div {
+    text-align: center;
     font-weight: bold;
-
 }
+
+
 
 /*Classes*/
-.center-block{
+.bottom-right-text {
+    bottom: 10px;
+    right: 10px
+}
+
+.bottom-right-text,
+.center-text,
+.lower-middle-text {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    unicode-bidi: isolate;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.grey-circle{
+.center-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    display: block;
+    unicode-bidi: isolate;
+    height: 400px;
+    width: 400px;
+}
+
+.lower-middle-text {
+    top: 260px;
+    left: 26%;
+}
+
+.grey-circle {
     filter: grayscale(100%);
     border-radius: 200px;
     transform: rotate(180deg);
 }
 
-.spooky{
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: peru;
+    color: darkblue;
+    margin: 0px 10px 0px -10px;
+}
+
+.nav-bar a:visited{
+    color: darkblue;
+}
+
+.nav-bar a{
+    display: inline-block;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    transition: ease 1s;
+}
+
+.nav-bar a:hover{
+    font-size: large;
+    background-color: darkorange;
+    color: white;
+    transition: ease 1s;
+}
+
+.spooky {
     font-style: italic;
     text-shadow: 3px 3px lightgrey;
 }
