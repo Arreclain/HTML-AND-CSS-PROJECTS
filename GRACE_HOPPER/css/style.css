@@ -3,12 +3,6 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-  background-image: url('../img/flag.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
 
 .content_container {
   margin-right: 15%;
@@ -61,4 +55,11 @@ body{
 
 img {
   float: right;
+  
+}
+
+/*Styling the Impact Paragraph*/
+#impact_para{
+  font-size: x-large;
+  padding: 78px;
 }
