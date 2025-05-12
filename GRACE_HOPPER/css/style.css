@@ -4,7 +4,10 @@ html {
 }
 
 body{
-  background-image: url('/img/amazing_flag.jpg');
+  background-image: url('../img/flag.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .content_container {
