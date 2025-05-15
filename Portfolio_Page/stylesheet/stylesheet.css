@@ -66,3 +66,121 @@ footer{
     padding: 2%;
     background-color: white;
 }
+
+/*NAV-BARRR!!!*/
+.navbar{
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+/*This part is for moveNav, but that's a bit beyond me at present.*/
+@keyframes moveNav{
+    from {left: -100vw;}
+    to {eft: 0vw;}  /*The summed effect of these two lines is to move the navbar into place on the screen.*/
+}
+
+/*IDK it fixes the text in the same way?*/
+@keyframes moveNavText{
+    from {left: -100vw;}
+    to {eft: 0vw;}  /*The summed effect of these two lines is to move the navbar into place on the screen.*/
+}
+
+
+/*navbar links*/
+.navbar a{
+float: left;
+display: block;
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+text-align: center;
+position: relative;
+-webkit-animation: moveNavText 5.75s;
+animation: moveNavText 5.75s;
+}
+
+/*Small screen accommodations.*/
+@media screen and (max-width: 576px){
+    .navbar a{
+        width: 25%; /*Degree of shrinking*/
+        font-size: 12px;
+    }
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.navbar a.active {
+    background-color: #444444;
+}
+
+/*Video Styling*/
+#typing-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px){
+    #typing-video{
+        display: none;
+    }
+}
+
+.video-text{
+    background: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText{
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+
+/*Table Styling*/
+* { /*This effect effects all elements on the page.*/
+    box-sizing: border-box;
+}
+
+.left-column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #f2d2f2;
+}
+
+@media screen and (max-width: 576px){
+    .left-column{
+        overflow: auto;
+    }
+}
+
+.right-column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #444444;
+}
+
