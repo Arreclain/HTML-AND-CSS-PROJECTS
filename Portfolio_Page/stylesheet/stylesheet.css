@@ -1,0 +1,68 @@
+/*GENERAL STYLING*/
+body {
+    margin: 0%;
+}
+
+/*H1 Heading Tag Styles*/
+h1 {
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 3%;
+    color: rgb(8, 8, 44);
+    transition: 1s ease;
+}
+
+h1:hover {
+    text-shadow: 3px 3px 4px #0a0a0a;
+    transition: 1s ease;
+}
+
+/*Styling for the portfolio's title text and quote.*/
+.violet-text {
+    color: rgb(65, 9, 88);
+}
+
+q {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+/*Anchors*/
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/*Images*/
+img {
+    filter: blur(2px);
+    border-radius: 10px;
+    max-width: 100%;
+    height: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: filter 1s ease;
+}
+
+img:hover {
+    filter: blur(0px);
+    transition: filter 1s ease;
+}
+
+@media screen and (max-width: 576px) {
+    img{
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/*Footer*/
+footer{
+    padding: 2%;
+    background-color: white;
+}
