@@ -20,7 +20,7 @@ h1:hover {
 
 /*Styling for the portfolio's title text and quote.*/
 .violet-text {
-    color: rgb(65, 9, 88);
+    color: rgb(197, 110, 231);
 }
 
 q {
@@ -208,5 +208,6 @@ input[type=text]{
 }
 
 input[type=text]:hover{
-    box-shadow: 2px 2px 5px #000000 inset;
+    box-shadow: 2px 2px 5px #000000 inset; /*Give them the appearance of depth when hovered over!*/
+    padding: 10x;
 }
