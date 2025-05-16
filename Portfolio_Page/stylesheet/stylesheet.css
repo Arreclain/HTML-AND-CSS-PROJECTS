@@ -184,3 +184,29 @@ animation: moveNavText 5.75s;
     background-color: #444444;
 }
 
+.column-tall{
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type=text]:hover{
+    box-shadow: 2px 2px 5px #000000 inset;
+}
