@@ -16,3 +16,14 @@ for (var i = 0; i < btns.length; i++) {
         modal.style.display = "block";
     }
 }
+
+//When the user clicks on <span> (x), close the modal.
+for (var i = 0; i<closeBtn.length; i++){
+    closeBtn[i].onclick = function () {
+        for (var index in modals){
+            if(modals[index].style){
+                modals[index].style.display = "none";
+            }
+        }
+    }
+}
