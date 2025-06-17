@@ -542,11 +542,14 @@
         <div class="container" id="contact">
             <h2>Contact Us</h2>
             <h3>Want more information about our recipes?<br>Contact us below!</h3>
-            <form><input type="text" placeholder="First Name"><input type="text" placeholder="Last Name"><br>
-                <input type="email" placeholder="Email"><input type="tel" placeholder="Phone Number"><br>
+            <div id="validateMsg"></div>
+            <form id="contactForm">
+                <input id="firstName" type="text" placeholder="First Name">
+                <input id="lastName" type="text" placeholder="Last Name"><br>
+                <input id="email" type="email" placeholder="Email"><input id="phone" type="tel" placeholder="Phone Number"><br>
                 <input type="checkbox" id="subscription">
                 <label for="subscription">Subscripe for weekly recipes!</label><br>
-                <textarea placeholder="Type Message here..."></textarea><br>
+                <textarea id="message" placeholder="Type Message here..."></textarea><br>
                 <input type="submit" value="Submit">
             </form>
         </div>
@@ -570,7 +573,7 @@
             </tr>
         </table>
     </footer>
-    <script src="javascript/javascript.js"></script>
+    <script src="javascript/javascript.js" defer></script>
 </body>
 
 </html>
