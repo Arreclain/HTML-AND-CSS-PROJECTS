@@ -116,41 +116,61 @@
 	</section>
 	<!--LIGHTBOX/MODALS-->
 	<!--LIGHT BOX IMAGES-->
-	<div class="row">
+	<div class="row"> <!--These images are buttons that open the lightbox-->
 		<div class="columnLB">
-			<img src="FILLTHISRICHARD" onclick="openModal();currentSilde(1)" class="hover-shadow">
+			<img src="images/beardeddragon-small.png" onclick="openModal();currentSilde(1)" class="hover-shadow">
 		</div>
 		<div class="columnLB">
-			<img src="FILLTHISRICHARD" onclick="openModal();currentSilde(2)" class="hover-shadow">
+			<img src="images/cat-small.png" onclick="openModal();currentSilde(2)" class="hover-shadow">
 		</div>
 		<div class="columnLB">
-			<img src="FILLTHISRICHARD" onclick="openModal();currentSilde(3)" class="hover-shadow">
+			<img src="images/dog-small.png" onclick="openModal();currentSilde(3)" class="hover-shadow">
 		</div>
 		<div class="columnLB">
-			<img src="FILLTHISRICHARD" onclick="openModal();currentSilde(4)" class="hover-shadow">
+			<img src="images/fish-small.png" onclick="openModal();currentSilde(4)" class="hover-shadow">
 		</div>
 		<div class="columnLB">
-			<img src="FILLTHISRICHARD" onclick="openModal();currentSilde(5)" class="hover-shadow">
+			<img src="images/rabbit-small.png" onclick="openModal();currentSilde(5)" class="hover-shadow">
 		</div>
 	</div>
 	<!--THE MODAL-->
 	<div id="natureModal" class="modal">
 		<span class="close" onclick="closeModal()">&times;</span>
 		<div class="slideBanner">
-			<div class="slideInBanner">
-				<img src="SMALL-IMG">
+			<div class="shownSlide">
+				<img src="images/beardeddragon.png" class="big-img">
 			</div>
-			<div class="slideInBanner">
-				<img src="SMALL-IMG">
+			<div class="shownSlide">
+				<img src="images/cat.png" class="big-img">
 			</div>
-			<div class="slideInBanner">
-				<img src="SMALL-IMG">
+			<div class="shownSlide">
+				<img src="images/dog.png" class="big-img">
 			</div>
-			<div class="slideInBanner">
-				<img src="SMALL-IMG">
+			<div class="shownSlide">
+				<img src="images/fish.png" class="big-img">
 			</div>
-			<div class="slideInBanner">
-				<img src="SMALL-IMG">
+			<div class="shownSlide">
+				<img src="images/rabbit.png" class="big-img">
+			</div>
+			<!--These should be the buttons-->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSildes(1)">&#10095;</a>
+
+			<!--Thumbnail image controls-->
+			<div class="columnLB">
+				<img class="slideInBanner" src="images/beardeddragon-small.png" onclick="currentSilde(1)" alt="">
+			</div>
+			<div class="columnLB">
+				<img class="slideInBanner" src="images/cat-small.png" onclick="currentSilde(2)" alt="">
+			</div>
+			<div class="columnLB">
+				<img class="slideInBanner" src="images/dog-small.png" onclick="currentSilde(3)" alt="">
+			</div>
+			<div class="columnLB">
+				<img class="slideInBanner" src="images/fish-small.png" onclick="currentSilde(4)" alt="">
+			</div>
+			<div class="columnLB">
+				<img class="slideInBanner" src="images/rabbit-small.png" onclick="currentSilde(5)" alt="">
 			</div>
 		</div>
 	</div>
