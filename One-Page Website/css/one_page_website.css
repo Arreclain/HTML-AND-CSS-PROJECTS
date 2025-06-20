@@ -11,10 +11,12 @@ body {
     background-color: antiquewhite;
     text-align: center;
 }
+
 p,
 #video {
     width: 80%;
     margin: 0% 10% 0% 10%;
+    display: inline-block;
 }
 
 img {
@@ -26,7 +28,7 @@ img {
 
 
 /*HEADERS*/
-nav{
+nav {
     margin: -12px -8px 10px -8px;
     padding-top: 10px;
     background-color: rgb(228, 186, 123);
@@ -75,7 +77,7 @@ form {
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
-   
+
 }
 
 
@@ -136,17 +138,96 @@ footer {
 
 /*                  ALL THE LIGHTBOX STUFF                            */
 
-.columnLB{ /*.row > .column targets columns directly inside of rows.  I think smart names are safer.*/
-padding: 0 8px;
+.columnLB { /*This arranges the pictures on the page itself (not in the modal)*/
+    padding: 0 8px;
+    float: left;
+    width: 18%;
+    padding: auto;
 }
 
-/*This section is pulled directly over because I want to test it some.*/
+.row { /*This is keeping them in one row.*/
+    box-sizing: border-box;
+    height: 140px;
+}
+
+.close {
+    /*This places an X in the upper right for closing out the modal.*/
+    color: orangered;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+
 img.hover-shadow {
-  transition: 0.3s;
+    transition: 0.3s;
+    /*Slight shadow fade in around images on main page that link to modal.*/
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*Details out that shadow around the images.*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/*End of copied code.*/
+
+
+/*Next and Previous Buttons*/
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: orangered;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;  /*Prevents selection.*/
+    box-sizing: border-box;
+   
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*DIRECTLY THE MODAL STUFF*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(30, 30, 30, 0.95);
+}
+
+.slideBanner {
+    position: relative;
+    background-color: blanchedalmond;
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+img.slideInBanner {
+    transition: 0.4s;
+}
 
