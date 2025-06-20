@@ -133,3 +133,20 @@ footer {
     border-radius: 20px 20px 0px 0px;
     margin: 10px -8px -8px -8px;
 }
+
+/*                  ALL THE LIGHTBOX STUFF                            */
+
+.columnLB{ /*.row > .column targets columns directly inside of rows.  I think smart names are safer.*/
+padding: 0 8px;
+}
+
+/*This section is pulled directly over because I want to test it some.*/
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*End of copied code.*/
+
