@@ -28,6 +28,9 @@ function displaySelectedMovieOptions() {
     var message = "Purchase confirmed for: " + movie + "\nTime: " + time + "\nTickets: " + quantity;
     var toastBody = document.getElementById('toastBody');
 
+    //This is my custom code.
+    //It checks the value of movie versus the movie  titles, then uses the ID
+    //attribute to apply a bootstrap based class name to the related paragraph text.
     if (movie == 'Ben-Hur') {
         document.getElementById('choseBen').classList.add('alert-info');
         console.log(movie);

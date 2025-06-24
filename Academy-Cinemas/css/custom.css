@@ -325,4 +325,6 @@ footer{
 }
 
 /*ADDITIONAL BOOTSTRAP*/
+/*The font-style is added so that you can tell that the text was effected
+without having to use the inspector.*/
 .alert-info {    font-style: italic;}
