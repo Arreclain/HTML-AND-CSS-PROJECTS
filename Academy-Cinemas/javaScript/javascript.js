@@ -24,13 +24,30 @@ function displaySelectedMovieOptions() {
     var time = document.getElementById('timeSelect').options[document.getElementById('timeSelect').selectedIndex].text;
     var quantity = document.getElementById('quantity').value;
 
-    var message = "Purchase confirmed for: " + movie + "\nTime: "+ time + "\nTickets: "+quantity;
+
+    var message = "Purchase confirmed for: " + movie + "\nTime: " + time + "\nTickets: " + quantity;
     var toastBody = document.getElementById('toastBody');
+
+    if (movie == 'Ben-Hur') {
+        document.getElementById('choseBen').classList.add('alert-info');
+        console.log(movie);
+    } else if (movie == 'The Day the Earth Stood Still') {
+        document.getElementById('choseStood').classList.add('alert-info');
+        console.log(movie);
+    } else if (movie == 'Vertigo') {
+        document.getElementById('choseVertigo').classList.add('alert-info');
+        console.log(movie);
+    } else {
+
+        console.log("No number should appear here: " + movie);
+        movie = "No movie selected";
+    }
+
     toastBody.textContent = message;
     var toast = new bootstrap.Toast(document.getElementById('toastDisplay'));
     toast.show();
 }
 
-function buyTickets(){
+function buyTickets() {
     displaySelectedMovieOptions();
 }

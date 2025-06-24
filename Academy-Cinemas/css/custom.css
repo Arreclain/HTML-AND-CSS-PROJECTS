@@ -323,3 +323,6 @@ footer{
     z-index: 30;
 
 }
+
+/*ADDITIONAL BOOTSTRAP*/
+.alert-info {    font-style: italic;}
