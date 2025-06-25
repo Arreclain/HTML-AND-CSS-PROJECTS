@@ -38,6 +38,11 @@ body {
     height: 100px;
 }
 
+/*nav-shrink was being applied, but it doesn't exist in my copy of bootstrap, so I made my own.*/
+.nav-shrink{
+    height: 80px;
+}
+
 /*Affects the title in the navbar Academy Cinemas*/
 .navbar-brand {
     color: var(--main-color-accent);

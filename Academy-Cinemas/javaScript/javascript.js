@@ -41,8 +41,8 @@ function displaySelectedMovieOptions() {
         document.getElementById('choseVertigo').classList.add('alert-info');
         console.log(movie);
     } else {
-
-        console.log("No number should appear here: " + movie);
+        //This is for catching error, mostly.  It should never occur.
+        console.log("No name should appear here: " + movie);
         movie = "No movie selected";
     }
 
@@ -54,3 +54,40 @@ function displaySelectedMovieOptions() {
 function buyTickets() {
     displaySelectedMovieOptions();
 }
+
+//JQUERY
+
+//Shrinks header size when the document is scrolled down by 80px
+$(document).on("scroll", function(){
+    //When the web page has been scrolled down by 50px,
+    //This effect triggers.  Did we want 80px or 50px?
+    if ($(document).scrollTop() > 50) {
+        //Once the 50px requirement has been met, add the 
+        //nav-shrink class to the "nav" element, identified
+        //via nav class
+        $("nav").addClass("nav-shrink");
+        //Adjust the position of the mobile drop menu
+        //to accommodate the new height decrease.
+        $("div.navbar-collapse").css("margin-top", "-6px");
+    } else {
+        //If the webpage has not been scrolled down or
+        //is back at the top, the nav-shrink class selector
+        //is removed from the HTML element labeled "nav"
+
+        $("nav").removeClass("nav-shrink");
+        //The margin for the drop down menu is now
+        //returned to its original amount
+        $("div.navbar-collapse").css("margin-top", "14px");
+    }
+});
+
+//Close mobile menu when a navigation link is clicked
+$(document).ready(function () {
+    //On click when an element contains just the nav-link class and not the drowpdown-toggle
+    //also close when an element wit the class .dropdown-item (each movie link) has been clicked
+    //The above comments provided for the code here scarely make sense.
+    $(".navbar-nav").on('click', '.nav-link:not(".dropdown-toggle"), .dropdown-item', function(){
+        //Collapse the navbar when a link or dropdown item is clicked
+        $(".navbar-collapse").collapse('hide');
+    });
+});
